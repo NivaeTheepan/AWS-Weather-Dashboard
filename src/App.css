@@ -1,0 +1,167 @@
+/* App.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* DarkVeil container - makes it full screen and behind content */
+.darkveil-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* controls the stacking of the elements on the z-axis*/
+}
+
+.shinytext-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 80px;
+  z-index: 1; /* controls the stacking of the elements on the z-axis*/
+}
+
+/* Main app content */
+.App {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+.App h1 {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Form elements */
+.App input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  min-width: 250px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  z-index: 2;
+}
+
+.App button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background: linear-gradient(45deg, #000000, #7304ce);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.2s;
+}
+
+.App button:hover {
+  transform: scale(1.05);
+}
+
+/* Weather card container */
+.weather-card-container {
+  position: relative;
+  z-index: 2;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+/* Weather form styles */
+.weather-form {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  min-width: 300px;
+}
+
+.weather-form input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.weather-form button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: linear-gradient(90deg, #9340ff, #0d0d0e);
+  color: white;
+  border: none;
+  border-radius: px;
+  cursor: pointer;
+  width: 60%;
+  transition: transform 0.2s;
+}
+
+.weather-form button:hover:not(:disabled) {
+  transform: scale(1.03);
+}
+
+.weather-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Error message */
+.error-message {
+  color: #ff6b6b;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Search again button */
+.search-again-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+}
+
+.search-again-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
