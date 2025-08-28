@@ -50,3 +50,5 @@ This project follows a serverless architecture using AWS:
 5. Weather data is returned back to the frontend and displayed in a styled card
 
 # 📷 Screenshots
+![image alt](https://github.com/NivaeTheepan/AWS-Weather-Dashboard/blob/main/Homepage.png?raw=true)
+![image alt](https://github.com/NivaeTheepan/AWS-Weather-Dashboard/blob/main/Search_Result.png?raw=true)
